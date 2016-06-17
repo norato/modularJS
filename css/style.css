@@ -7,15 +7,23 @@ body {
   background: #ccc;
   padding: 0 31px 0 8px;
 }
+#peopleModule {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 #peopleModule h1 {
   text-align: center;
+  width: 100%;
 }
 #peopleModule input {
   width: 91px;
 }
 ul#people {
   display: flex;
-  width: 80%;
+  width: 100%;
   justify-content: center;
 }
 ul#people li {
@@ -31,4 +39,11 @@ ul#people li {
 ul#people li i {
   position: absolute;
   right: 6px;
+  border: 1px solid;
+  background: #CCC;
+  border-radius: 50%;
+  font-size: 11px;
+  padding: 0px 3px;
+  margin-top: 2px;
+  cursor: pointer;
 }
