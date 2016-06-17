@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jquery without modularJS</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="hero-unit">
+    <h1>JS<br/>Tutorials</h1>
+  </div>
+  <div id="peopleModule">
+    <h1>People</h1>
+    <input type="text" placeholder="name">
+    <button id="addPerson">Add Person</button>
+    <ul id="people">
+      <script id="people-template" type="text/template">
+        {{#people}}
+          <li>
+            <span>{{.}}</span>
+            <i class="del">X</i>
+          </li>
+        {{/people}}
+      </script>
+    </ul>
+  </div>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/mustache.js/mustache.min.js"></script>
+  <script src="modularJS.js"></script>
+
+</body>
+</html>
